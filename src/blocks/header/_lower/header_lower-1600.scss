@@ -1,0 +1,113 @@
+.header_lower {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: $lower-header-filler-color;
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 1240px;
+        height: 80px;
+        margin: 0 auto 0 auto;
+    }
+    &__logo {
+        width: 217px;
+        height: 57px;
+        margin: 12px auto auto 0;
+    }
+    &__links-wrapper {
+        position: absolute;
+        top: 31px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 479px;
+        height: 16px;
+        gap: 100px;
+    }
+    &__link {
+        margin: auto 0 auto 0;
+        color: $lower-header-text-color;
+        text-decoration: none;
+        @include Lato-600;
+    }
+    &__search {
+        display: flex;
+        flex-direction: row;
+        width: 39px;
+        height: 39px;
+        margin: auto 20px auto auto;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color: #F5F5F5;
+        border-radius: 88.64px;
+        background-color: $lower-header-search-filler-color-1600;
+    }
+    &__text-input {
+        display: none;
+        width: 39px;
+        height: 39px;
+        margin: auto auto auto 21px;
+        border-width: 0;
+        text-align: center;
+        color: $lower-header-text-color;
+        @include Lato-400;
+    }
+    &__text-input:focus {
+        outline: none;
+    }
+    &__text-input::placeholder {
+        color: rgba($color: red, $alpha: 0);
+    }
+    &__button {
+        width: 21.27px;
+        height: 21.27px;
+        margin: auto 8.86px auto auto;
+        border-width: 0;
+        background-image: url(./src/blocks/header/images/header_lower__button-1600.svg);
+        background-color: $lower-header-search-filler-color-1600;
+        background-size: cover;
+    }
+    &__shopping-card-button {
+        display: flex;
+        flex-direction: row;
+        width: 138px;
+        height: 39px;
+        margin: auto 0 auto 0;
+        border-radius: 100px;
+        border-width: 0;
+        background-color: $lower-header-shopping-card-filler-color;
+    }
+    &__shopping-card-image {
+        width: 32px;
+        height: 32px;
+        margin: auto 0 auto 19.7px;
+    }
+    &__shopping-card-text {
+        @include Lato-400;
+        width: 62px;
+        height: 16px;
+        margin: auto 0 auto 5px;
+        color: $lower-header-shopping-card-text-color;
+    }
+    &__shopping-card-counter {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 100px;
+        margin: 3px auto auto 36px;
+        background-color: $lower-header-shopping-card-counter-filler-color;
+    }
+    &__shopping-card-counter-value {
+        @include Inter-400;
+        text-align: center;
+        line-height: 18px;
+        color: $lower-header-shopping-card-counter-value-color;
+    }
+    &__menu-button {
+        display: none;
+    }
+}

@@ -1,0 +1,129 @@
+//header
+$upper-header-filler-color: #231815;
+$upper-header-text-color: #FFFFFF;
+$lower-header-filler-color: #FFFFFD;
+$lower-header-text-color: #231815;
+$lower-header-search-filler-color-1920: #FFFFFF;
+$lower-header-search-filler-color-1600: #231815;
+$lower-header-shopping-card-filler-color: #000000;
+$lower-header-shopping-card-text-color: #FFFFFF;
+$lower-header-shopping-card-counter-filler-color: #FFFFFF;
+$lower-header-shopping-card-counter-value-color: #1A1A1A;
+
+
+//main
+$main-filler-color: #FFFFFD;
+$main-text-color: #231815;
+$main-price-color: #231815;
+$main-price-with-discount-color: #E45302;
+$main-price-without-discount-color: #808080;
+$main-discount-indicator-filler-color: #231815;
+$main-discount-indicator-text-color: #FFFFFF;
+$main-details-button-filler-color: #E45302;
+$main-details-button-text-color: #FFFFFF;
+
+
+//footer
+$footer-filler-color: #0C0C0C;
+$footer-section-title-text-color: #FFFFFF;
+$footer-section-text-color: #F5F5F5;
+$footer-no-section-text-color: #808080;
+
+
+//fonts
+@font-face {
+    font-family: 'Lato';
+    src: url(../Van_Gogh-Link_test-task/src/assets/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Van_Gogh-Link_test-task/src/assets/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Korataki';
+    src: url(../Van_Gogh-Link_test-task/src/assets/Korataki.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../Van_Gogh-Link_test-task/src/assets/Inter-Regular.ttf);
+}
+@mixin Lato-400 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+}
+@mixin Lato-500 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+}
+@mixin Lato-600 {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
+}
+@mixin Lato-700-text {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: left;
+}
+@mixin Lato-600-number {
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    text-align: left;    
+}
+@mixin Lato-700-number {
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+    text-align: left;
+}
+@mixin Roboto-400 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+}
+@mixin Korataki-400 {
+    font-family: 'Korataki';
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 61.6px;
+    text-align: left;
+}
+@mixin Korataki-400-tablet {
+    font-family: 'Korataki';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44.8px;
+    text-align: left;
+}
+@mixin Korataki-400-mobile {
+    font-family: 'Korataki';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+}
+@mixin Inter-400 {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+}
+

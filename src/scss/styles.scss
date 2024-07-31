@@ -1,0 +1,34 @@
+@import './variables.scss';
+@import '../../index.scss';
+
+//Тут реализован макет: "Desktop_search_1920"
+//Версия для ширины экрана: 1600px < X
+@media (min-width: 1600px) {
+    @import '../blocks/header/header-1920.scss';
+    @import '../blocks/main/main-1920.scss';
+    @import '../blocks/footer/footer-1920.scss';
+}
+
+//Тут реализован макет: "Desktop_search_1600"
+//Версия для ширины экрана: 1300px < X < 1600px
+@media (min-width: 1300px) and (max-width: 1600px) {
+    @import '../blocks/header/header-1600.scss';
+    @import '../blocks/main/main-1600.scss';
+    @import '../blocks/footer/footer-1600.scss';
+}
+
+//Тут реализован макет: "Tablet_Каталог отдельной категории 770"
+//Версия для ширины экрана: 770px < X < 1300px
+@media (min-width: 720px) and (max-width: 1300px){
+    @import '../blocks/header/header-770.scss';
+    @import '../blocks/main/main-770.scss';
+    @import '../blocks/footer/footer-770.scss';
+}
+
+//Тут реализован макет: "Mobile_search_page 390"
+//Версия для ширины экрана: X < 720px
+@media (max-width: 720px){
+    @import '../blocks/header/header-390.scss';
+    @import '../blocks/main/main-390.scss';
+    @import '../blocks/footer/footer-390.scss';
+}

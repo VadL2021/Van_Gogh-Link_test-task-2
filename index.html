@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="header_upper">
+            <div class="header_upper__content">
+                <div class="header_upper__links-wrapper">
+                    <a href="" class="header_upper__link">
+                        Доставка и оплата
+                    </a>
+                    <a href="" class="header_upper__link">
+                        Гарантия и возврат
+                    </a>
+                    <a href="" class="header_upper__link">
+                        EN
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_lower">
+            <div class="header_lower__content">
+
+                <img class="header_lower__logo"
+                    src="./src/blocks/header/images/Logo.svg" 
+                    alt="Logo"
+                >
+
+                <div class="header_lower__links-wrapper">
+                    <a href="" class="header_lower__link">
+                        КАТАЛОГ
+                    </a>
+                    <a href="" class="header_lower__link">
+                        О КОМПАНИИ
+                    </a>
+                    <a href="" class="header_lower__link">
+                        КОНТАКТЫ
+                    </a>
+                </div>
+
+                <div class="header_lower__search">
+                    <input class="header_lower__text-input"
+                        type="text"
+                        placeholder="Лампы"
+                    >
+                    <button class="header_lower__button">
+                </div>
+
+                <button class="header_lower__shopping-card-button">
+                    <img class="header_lower__shopping-card-image"
+                        src="./src/blocks/header/images/header_lower__shopping-card-button.svg"
+                        alt="" 
+                    >
+                    <p class="header_lower__shopping-card-text">
+                        Корзина
+                    </p>
+                    <div class="header_lower__shopping-card-counter">
+                        <!-- При необходиости значение легко заменить через js  -->
+                        <p class="header_lower__shopping-card-counter-value">
+                            3 
+                        </p>
+                    </div>
+                </button>
+
+                <button class="header_lower__menu-button">
+                    <img 
+                        src="https://vadl2021.github.io/Van_Gogh-Link_test-task-2/src/blocks/header/images/header_lower__shopping-card-button.svg" 
+                        alt="menu button image" 
+                        class="header_lower__menu-button">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="main__content">
+
+            <div class="main__title">
+                Результаты поиска
+            </div>
+
+            <div class="main__cards-wrapper">
+                <!-- СЮДА cards-manager.js размещает карточки товаров-->
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__content">
+
+            <div class="footer__column_type_about">
+
+                <img class="footer__logo"
+                    src="./src/blocks/footer/images/logo.svg" 
+                    alt="Logo" 
+                >
+
+                <div class="footer__recaptcha-info-wrapper">
+                    <span class="footer__recaptcha-info"
+                        >Этот сайт защищен от спама службой reCAPTCHA Google. </span>
+                    <a class="footer__recaptcha-info" href=""
+                        >Политика конфиденциальности
+                    </a>
+                    <span class="footer__recaptcha-info"
+                        >/</span
+                    ><a class="footer__recaptcha-info" href=""
+                        >Условия предоставления услуг
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer__column_type_organisation-info">
+
+                <div class="footer__address">
+                    <p class="footer__title">
+                        Адрес
+                    </p>
+                    <p class="footer__text">
+                        Текст, Текст, Текст
+                    </p>
+                </div>
+
+                
+                <div class="footer__contacts">
+                    <p class="footer__title">
+                        Контакты
+                    </p>
+                    <p class="footer__text">
+                        Email: urban.dwelling@yandex.com 
+                    </p>
+                    <p class="footer__text">
+                        Телефон: 8 (999) 999-99-99 
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footer__column_type_services">
+                <p class="footer__title">
+                    Услуги
+                </p>
+                <a class="footer__text"
+                href=""
+                >
+                    Каталог
+                </a>
+                <a class="footer__text"
+                href=""
+                >
+                    О компании 
+                </a>
+                <a class="footer__text"
+                href=""
+                >
+                    Контакты
+                </a>
+                <a class="footer__text"
+                href=""
+                >
+                    Доставка и оплата
+                </a>
+                <a class="footer__text"
+                href=""
+                >
+                    Гарания и возврат 
+                </a>
+            </div>
+            <div class="footer__column_type_document-links">
+                <a class="footer__other-info"
+                href=""
+                >
+                    Публичная оферта
+                </a>
+                <a class="footer__other-info"
+                href=""
+                >
+                    Политика персональных данных
+                </a>
+                <div class="footer__payment-systems">
+                    <img class="footer__payment-system-logo"
+                        src="./src/blocks/footer/images/payment-system-logo-1.svg" 
+                        alt=""
+                    >
+                    <img class="footer__payment-system-logo"
+                        src="./src/blocks/footer/images/payment-system-logo-2.svg" 
+                        alt=""
+                    >
+                    <img class="footer__payment-system-logo"
+                        src="./src/blocks/footer/images/payment-system-logo-3.svg" 
+                        alt=""
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./src/blocks/main/cards-manager.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.header_upper {
+    display: block;
+    width: 100vw;
+    height: 40px;
+    background-color: $upper-header-filler-color;
+    &__content {
+        width: 1400px;
+        height: 40px;
+        margin: 0 auto 0 auto;
+    }
+    &__links-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 440px;
+        height: 40px;
+        margin: 0 0 0 auto;
+        gap: 70px;
+    }
+    &__link {
+        @include Lato-400;
+        margin: auto 0 auto 0;
+        color: $upper-header-text-color;
+        text-decoration: none;
+    }
+}

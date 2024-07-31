@@ -1,0 +1,120 @@
+.footer {
+    display: block;
+    background-color: $footer-filler-color;
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        height: 867px;
+        margin: 0 auto 0 auto;
+    }
+
+    //!!!
+    //  Разделы только для Desktop версии
+    //  в версии tablet и mobile элементы расположены хаотично
+    //  поэтому позиционируются через absolute
+    //!!!
+    //  Извиняюсь за костыль, просто увидел что происходит в макете
+    //  в версии tablet в футере только в последний день срока 
+    //  тестового задания. 
+    //  Для всех остальных версий структура страницы подходит
+    //  На этой все элементы явно были свпозиционированы через 
+    //  position: absolute.
+    //!!
+    //Столбцы
+    &__column_type {
+        &_about {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        &_organisation-info {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        &_services {
+            position: absolute;
+            //Здесь не 100% из-за того, что
+            //этот стобец состоит из 1 строки
+            //и в версии tablet, работа с ним
+            //происходит как с содержимым стобцов
+            //ниже.
+            width: 140px;
+            height: 238px;
+            top: 318px;
+        }
+        &_document-links {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    //содержимое столбцов
+    //ABOUT:
+    &__recaptcha-info-wrapper {
+        position: absolute;
+        width: 321px;
+        top: 743px;
+    }
+    &__recaptcha-info {
+        @include Roboto-400;
+        display: inline;
+        color: $footer-no-section-text-color;
+    }
+
+    //ORGANISATION-INFO:
+    &__address {
+        position: absolute;
+        width: 245px;
+        height: 62px;
+        top: 121px;
+    }
+    &__contacts{
+        position: absolute;
+        width: 246px;
+        height: 95px;
+        top: 203px;
+    }
+    &__title {
+        @include Lato-700-text;
+        font-weight: 550;
+        color: $footer-section-title-text-color;
+    }
+    &__text{
+        display: block;
+        margin: 20px 0 0 0;
+        @include Lato-400;
+        text-decoration: none;
+        color: $footer-section-text-color;
+    }
+    &__other-info{
+        display: block;
+        margin: 0 0 20px 0;
+        top: 546px;
+        @include Lato-400;
+        text-align: left;
+        text-decoration: none;
+        color: $footer-no-section-text-color;
+    }
+    &__payment-systems {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        width: 206px;
+        height: 29px;
+        top: 682px;
+    }
+    &__payment-system-logo {
+        width: 50px;
+        height: 29px;
+    }
+    &__logo {
+        position: absolute;
+        top: 40px;
+        width: 180px;
+        height: 47px;
+    }
+}

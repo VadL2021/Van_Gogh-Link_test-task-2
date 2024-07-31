@@ -1,0 +1,88 @@
+.footer {
+    display: block;
+    background-color: $footer-filler-color;
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 1240px;
+        height: 320px;
+        margin: 0 auto 0 auto;
+    }
+
+    //Столбцы
+    &__column_type {
+        &_about {
+            width: 320px;
+            height: 195px;
+            margin: 64px 0 0 0;
+        }
+        &_organisation-info {
+            width: 246px;
+            height: 195px;
+            margin: 60px 0 0 70px;
+        }
+        &_services {
+            width: 140px;
+            height: 198px;
+            margin: 60px 0 0 82px;
+        }
+        &_document-links {
+            width: 242px;
+            margin: 62px 0 0 136px;
+        }
+    }
+
+    //содержимое столбцов
+    //ABOUT:
+    &__recaptcha-info-wrapper {
+        margin: 52.5px 0 0 0;
+    }
+    &__recaptcha-info {
+        @include Roboto-400;
+        display: inline;
+        color: $footer-no-section-text-color;
+    }
+
+    //ORGANISATION-INFO:
+    &__address {
+        width: 245px;
+        height: 62px;
+    }
+    &__contacts{
+        width: 246px;
+        height: 95px;
+        margin: 38px 0 0 0;
+    }
+    &__title {
+        @include Lato-700-text;
+        font-weight: 550;
+        color: $footer-section-title-text-color;
+    }
+    &__text{
+        display: block;
+        margin: 20px 0 0 0;
+        @include Lato-400;
+        text-decoration: none;
+        color: $footer-section-text-color;
+    }
+    &__other-info{
+        display: block;
+        margin: 0 0 20px 0;
+        @include Lato-400;
+        text-align: right;
+        text-decoration: none;
+        color: $footer-no-section-text-color;
+    }
+    &__payment-systems {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        width: 206px;
+        height: 29px;
+        margin: 74px 0 0 auto;
+    }
+    &__payment-system-logo {
+        width: 50px;
+        height: 29px;
+    }
+}
